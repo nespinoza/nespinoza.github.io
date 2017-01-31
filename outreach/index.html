@@ -4,7 +4,7 @@ title: Néstor Espinoza's Outreach
 current: outreach
 description: Outreach activities
 ---
-
+{% if site.language == "en" %}
 <section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
   <h3 itemprop="title">Dimension Futuro</h3>
   <p>
@@ -17,3 +17,16 @@ description: Outreach activities
 
   <h4>>> <a href="http://www.astro.puc.cl/~nespino/show-31-ene-2017.wav" target="_blank">Download 01-31-2017 show</a> | <a href="http://www.nature.com/articles/s41550-016-0026" target="_blank">Reference Scientific Article</a></h4>
 </section>
+{% else %}
+<section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
+  <h3 itemprop="title">Dimension Futuro</h3>
+  <p>
+    <span itemprop="address"><span itemprop="locality"><b>"Dimension Futuro"</b> es una seccion semanal del programa radial 
+                    ``Palabras sacan palabras" de la radio <a href="http://www.futuro.cl/blog/category/palabras-sacan-palabras/" target="_blank">Futuro FM</a>.
+                    El objetivo principal de la seccion es aterrizar ciencia de punta de manera informal y entretenida. Aqui podras encontrar algunas 
+                    grabaciones de la seccion:</span>
+  </p>
+
+  <h4>>> <a href="http://www.astro.puc.cl/~nespino/show-31-ene-2017.wav" target="_blank">Show del 01-31-2017</a> | <a href="http://www.nature.com/articles/s41550-016-0026" target="_blank">Articulo cientifico de referencia</a></h4>
+</section>
+{% endif %}
