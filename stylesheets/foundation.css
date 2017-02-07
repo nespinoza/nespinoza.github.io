@@ -5329,3 +5329,9 @@ th.hide-for-touch {
 
 .touch th.show-for-touch {
   display: table-cell !important; }
+
+body:not(.en) :lang(en), 
+body:not(.es) :lang(es) { 
+    display: none; 
+}
+
