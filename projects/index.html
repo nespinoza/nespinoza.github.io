@@ -1,0 +1,89 @@
+---
+layout: projects
+title: Néstor Espinoza's MPIA Internship Projects
+current: projects
+description: MPIA Internship Projects
+---
+
+Below you will find possible MPIA Internship projects that could be perform under my supervision:
+
+<br>
+<br>
+<section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
+  <h3 itemprop="title">Stellar heterogeneities and transiting exoplanets</h3>
+  <p>
+  <b>Context.</b> It has been observed for a long time that unnoculted and occulted stellar heterogeneities can have 
+  an impact on the retrieval of transit parameters from exoplanet transit lightcurves. The case of 
+  occulted stellar heterogeneities has been extensively discussed in the literature (see, e.g., 
+  the models of <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1407.4465" target="_blank">Beky et al., 2014</a>, 
+  and <a href="http://adsabs.harvard.edu/abs/2013MNRAS.428.3671T" target="_blank">Tregloan-Reed et al. 2013</a>), and has 
+  served to understand not only anomalies in transiting exoplanet lightcurves, but also of the underlying properties of the 
+  stellar spots, including their contrast distribution, sizes and positions (see, e.g., <a href="https://arxiv.org/abs/1708.02583" 
+  target="_blank">Morris et al. 2017 and references therein)</a>. However, the more common case of <b>unnoculted</b> 
+  stellar spots and its impact on the retrieval of physical parameters from transit lightcurves has not been as extensively studied 
+  and modelled. The largest impact is on the transit depth: the apparent dimming of the star as the planet passes in front of it. During periods of 
+  low cool spot coverage, the star will appear brigther, and thus the observed dimming will be smaller than when there is a larger spot coverage, 
+  where the star is dimmer and thus the transit depth will be larger. However, as has been recently shown by <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1711.05691" 
+  target="_blank">Rackham et al. (2017)</a>, researchers usually assume that there is a one-to-one correspondance between the level of 
+  activity a star shows in its long-term photometric signatures (that arise as spots go in and out of view by the observer) and the 
+  spot coverage of the stars, while the situation is much more complex due to the unknown size and contrast of spots, which might include 
+  both dark and bright spots. This assumption is usually used to correct for stellar activity in exoplanet atmosphere studies (see, 
+  e.g., <a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1103.0026" target="_blank">Sing et al., 2010</a> and references therein), 
+  but the level at which this correction is acceptable has not been empirically studied, and only put to question by the simulations performed 
+  by Rackham et al. (2017). In this work, we aim at performing an empirical study to quantify this, and inform future exoplanet atmospheric studies 
+  on its impact.
+  <br>
+  <b>Specific tasks.</b> Lightcurves of transiting extrasolar planets from the Kepler mission will be modelled using state-of-the-art modelling 
+  techniques, as well as rotational modulation signals from the stars they transit (the first using known models of transiting exoplanet lightcurves, the latter 
+  using gaussian process regression, both using Markov Chain Monte Carlo (MCMC) methods in Python). These two pieces of information will allow us to asses how the transit 
+  parameters evolve as a function of the level of photometric activity of the star, and quantify how far off from this empirical "truth" the correction for 
+  exoplanet atmospheric studies. Additionally, important stellar parameters such as limb-darkening and its evolution will be able to be extracted from these 
+  transit lightcurves, providing an additional piece of information that will be analyzed in order to understand how the brightness profile of the star changes 
+  as a function of time.
+<br>
+<br>
+</p>
+</section>
+
+<section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
+  <h3 itemprop="title">An homogeneous study of known transiting exoplanets</h3>
+  <p>
+  <b>Context.</b> Transiting exoplanets are one of the best studied exoplanets. If combined with radial-velocity measurements, the mass and radius can be 
+  extracted for them, allowing us to search for correlations between their fundamental parameters, aiding us in the understanding of their formation and 
+  evolution, which in turn allows us to understand their present states in terms of their shapes and composition. This has allowed us to understand, for example, 
+  that giant exoplanets are very metal enriched (<a href="https://arxiv.org/abs/1511.07854" target="_blank">Throngren et al., 2016</a>), which has huge 
+  implications for their compositions (<a href="https://arxiv.org/abs/1611.08616" target="_blank">Espinoza et al., 2017</a>) and to the impact that, e.g., stellar 
+  irradiation has on them (see, e.g., <a href="https://arxiv.org/abs/1709.04539" target="_blank">Throngren and Fortney, 2017</a>, 
+  <a href="http://adsabs.harvard.edu/abs/2012A%26A...540A..99E">Enoch et al., 2012</a>). The big problem, however, is that the properties of the hundreds of exoplanets 
+  known to date have been obtained with different methods and tools, and thus, not only we could be currently missing important correlations on this dataset, but also  many 
+  spurious correlations between the parameters might be polluting this sample. In this project, the aim is to perform the first stage of a homogeneous study of transiting 
+  exoplanets using state-of-the-art analysis tools.
+  <br>
+  <b>Specific tasks.</b> The main engine for the joint analysis of radial velocities and transits will be exonailer (<a href="https://arxiv.org/abs/1601.07608" 
+  target="_blank">Espinoza et al., 2016</a>; see the <a href="https://github.com/nespinoza/exonailer" target="_blank">code in GitHub</a>). However, this engine is currently 
+  using an MCMC engine which does not allow to perform proper, bayesian model comparison. The first task will be to implement MultiNest 
+  (<a href="https://arxiv.org/abs/0809.3437" target="_blank">Feroz et al., 2008</a>) to this engine, which allows to perform proper model comparison between datasets. This first 
+  task will have a huge impact not only on this project, but on many future projects involving the discovery of new transiting extrasolar planet systems. The second task will be 
+  to perform a data collection search on transit lightcurves and radial velocities for the systems in this homogeneous study, and perform a joint analysis with exonailer, and use 
+  them to search for (new and known) correlations between the parameters of the systems.
+  </p>
+</section>
+
+<section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
+  <h3 itemprop="title">Bayesian Model Averaging v/s Gaussian Process Regression in exoplanet atmosphere studies</h3>
+  <p>
+  <b>Context.</b> Exoplanet atmosphere studies are difficult to perform mainly because of systematic effects on time-series data, which are hard to model due do the poor knowledge 
+  of their causes. It has been shown by <a href="http://adsabs.harvard.edu/abs/2014MNRAS.445.3401G" traget="_blank">Gibson (2014)</a> that both model averaging (a technique 
+  which averages our ignorance about the correct model of the systematic effects present in a time-series) and gaussian process regression can alleviate the problem and produce 
+  reliable inference, with the latter method gaining large popularity in the recent literature. It is unclear, however, how gaussian process regression as compared to model averaging 
+  compare against <b>real</b> datasets in the low number of datapoints regime, as simulations usually have added systematic noise close to the model used to account for it. In this 
+  project, we will inject model transit lightcurves to real time-series obtained in the context of the ACCESS survey 
+  (see <a href="https://www.hou.usra.edu/meetings/abscicon2017/pdf/3355.pdf" target="_blank">this</a> for a description of the survey) in order to understand which one of the 
+  two methods is the most reliable in extracting the real underlying injected system parameters.
+  <br>
+  <b>Specific tasks.</b> A gaussian process regression will have to be implemented alongside MultiNest (<a href="https://arxiv.org/abs/0809.3437" target="_blank">Feroz et al., 2008</a>) 
+  in order to analyze the lightcurves. This same posterior sampling technique will be used for model averaging. Once these tools are set, injection and recovery tests will be 
+  performed in order to understand how well each method performs, allowing us to understand the real setbacks of each of the analysis techniques used to analyze the data, helping us 
+  understand which one is the "best" for the applications of the ACCESS survey.
+  </p>
+</section>
