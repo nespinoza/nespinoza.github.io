@@ -46,29 +46,41 @@ Below you will find possible MPIA Internship projects that could be performed un
 </section>
 
 <section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
-  <h3 itemprop="title">An open-source, analytical retrieval suite for exoplanet atmosphere studies</h3>
-  <p align="justify"> 
-  <b>Context.</b> Transmission spectroscopy, the change of the size of a planet during transit as a function of wavelength due to the different constituents and opacity sources in its 
-  atmosphere, has revolutionized our understanding of exoplanet atmospheres, allowing us to retrieve important molecules such as water from wavelengt-dependant transit 
-  lightcurves. Its modelling through atmospheric retrievals, where either the ratio between the constituents in the atmospheres or the abundances of the different elements that 
-  make it up are left as free parameters, has been in turn a huge advancement towards the interpretation of this data. Recently, <a href="https://arxiv.org/abs/1702.02051">Heng 
-  and Kitzmann (2017)</a> has provided a set of analytical formulae to compute model transmission spectra given a set of elemental abundances and opacities. On the other hand, 
-  opacities can be obtained from different tables, while abundances of elements can be either fitted directly or constrained using chemical equilibrium, for which both analytical and 
-  non-analytical techniques exist. In this project, the objective is to write a simple yet powerful retrieval suite from the analytical formulae provided by Heng and Kitzmann 
-  (2017), and couple it with either analytical formulae for chemical equilibrium or with brute-force Gibbs free energy minimization, in order to generate a tool with which 
-  to quickly analyze transmission spectra.
+  <h3 itemprop="title">Extracting signatures of dusk and dawn on extrasolar planets</h3>
+  <p align="justify">
+  <b>Context.</b> If an exoplanet is cloudy on one side and not on the other, this should imprint signatures on observed transit lightcurves. In this project, 
+  the interested researcher will use Kepler, HST and TESS data in order to look for those signatures in distant extrasolar worlds using codes already implemented 
+  for this project.
   <br>
-  <b>Specific tasks.</b> The first task would be to join the analytical formulae from Heng and Kitzmann (2017) with a posterior sampling technique such as MultiNest (<a href="https://arxiv.org/abs/0809.3437" target="_blank">Feroz et al., 2008</a>). This will allow to perform retrievals free of any chemical constrain on data, and thus the next step would be to test this 
-tool against known results from transmission spectroscopy data in the literature. The following step would be to join this tool with both brute-force Gibbs free energy minimization 
-(through, e.g., <a href="https://github.com/nespinoza/pyCEA" target="_blank">pyCEA</a>) and/or with analytical chemical equilibrium calculations, and compare them to both transmission 
-spectrum models and to real data.
+  <b>Specific tasks.</b> The interested researcher will have to download and analyze data, in order to identify the most precise lightcurves taken either by Kepler, HST and/or TESS 
+  to date. For them, transit lightcurve models will have to be used in order to find evidence for assymetries in the lightcurves.
 <br>
 <br>
 </p>
 </section>
 
 <section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
-  <h3 itemprop="title">An homogeneous study of known transiting exoplanets</h3>
+  <h3 itemprop="title">An open-source, analytical retrieval suite for exoplanet atmosphere studies</h3>
+  <p align="justify"> 
+  <b>Context.</b> Transmission spectroscopy, the change of the size of a planet during transit as a function of wavelength due to the different constituents and opacity sources in its 
+  atmosphere, has revolutionized our understanding of exoplanet atmospheres, allowing us to retrieve important molecules such as water from wavelengt-dependant transit 
+  lightcurves. Its modelling through atmospheric retrievals, where either the ratio between the constituents in the atmospheres or the abundances of the different elements that 
+  make it up are left as free parameters, has been in turn a huge advancement towards the interpretation of this data. Recently, <a href="https://arxiv.org/abs/1702.02051">Heng 
+  and Kitzmann (2017)</a> has provided a set of analytical formulae to compute model transmission spectra given a set of elemental abundances and opacities, that we have recently 
+  implemented <a href="https://arxiv.org/abs/1807.10652">Espinoza et al. (2018)</a>. However, this retrieval suite currently assumes no chemical or physical consistency, in a so-called 
+  ``free" retrieval which directly fits the abundances of different atoms/molecules from the data. In this project, the idea is to couple this retrieval with a chemical equilibrium and condensation 
+  suite in order to impose chemical constraints that will serve to obtain more precise estimates of important observables in the atmospheres of these distant extrasolar worlds.
+  <br>
+  <b>Specific tasks.</b> The first task would be to study known chemical equilibrium codes (e.g., <a href="https://github.com/nespinoza/pyCEA" target="_blank">pyCEA</a>) and the retrieval code 
+  implemented in <a href="https://arxiv.org/abs/1807.10652">Espinoza et al. (2018)</a>. With this, the identification of the most important parameters that define a given equilibrium setting will have to 
+  be done, and later implemented into this retrieval suite. Finally, testing of the algorithms in known systems will have to be done. 
+<br>
+<br>
+</p>
+</section>
+
+<section id="contact-information" itemscope itemtype="http://data-vocabulary.org/Person">
+  <h3 itemprop="title">An homogeneous study of known transiting exoplanets (already taken by PhD student)</h3>
   <p align="justify">
   <b>Context.</b> Transiting exoplanets are one of the best studied exoplanets. If combined with radial-velocity measurements, the mass and radius can be 
   extracted for them, allowing us to search for correlations between their fundamental parameters, aiding us in the understanding of their formation and 
@@ -103,9 +115,9 @@ spectrum models and to real data.
   (see <a href="https://www.hou.usra.edu/meetings/abscicon2017/pdf/3355.pdf" target="_blank">this</a> for a description of the survey) in order to understand which one of the 
   two methods is the most reliable in extracting the real underlying injected system parameters.
   <br>
-  <b>Specific tasks.</b> A gaussian process regression will have to be implemented alongside MultiNest (<a href="https://arxiv.org/abs/0809.3437" target="_blank">Feroz et al., 2008</a>) 
-  in order to analyze the lightcurves. This same posterior sampling technique will be used for model averaging. Once these tools are set, injection and recovery tests will be 
-  performed in order to understand how well each method performs, allowing us to understand the real setbacks of each of the analysis techniques used to analyze the data, helping us 
-  understand which one is the "best" for the applications of the ACCESS survey.
+  <b>Specific tasks.</b> A gaussian process regression is already implemented alongside MultiNest (<a href="https://arxiv.org/abs/0809.3437" target="_blank">Feroz et al., 2008</a>) 
+  in order to analyze the lightcurves. This same posterior sampling technique will be used for model averaging, which is also already implemented. The task of the interested researcher 
+  would have to perform injection and recovery test on real data in order to understand how well each method performs, allowing us to understand the real setbacks of each of the 
+  analysis techniques used to analyze the data, helping us understand which one is the "best" for the applications of the ACCESS survey.
   </p>
 </section>
