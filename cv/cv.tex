@@ -25,7 +25,21 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article} % Document font size and paper size
+\documentclass[12pt, a4paper]{article} % Document font size and paper size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{fontspec} % Allows the use of OpenType fonts
 \usepackage{multicol}
@@ -91,12 +105,12 @@
 \begin{minipage}[t]{0.63\textwidth}
 Bernoulli \& IAU-Gruber Fellow\\
 Max-Planck-Institut f\"ur Astronomie\\
-K\"onigstuhl 17, D-69117, Heidelberg, Germany \\
+K\"onigstuhl 17, 69117, Heidelberg, Germany \\
 \end{minipage}
 \begin{minipage}[t]{0.37\textwidth}
 E-mail: \href{mailto:espinoza@mpia.de}{espinoza@mpia.de}\\
 Phone: +49 (0) 6221 528-418\\ 
-\url{http://www.nestor-espinoza.com}
+\url{www.nestor-espinoza.com}
 \end{minipage}
 
 \hrulefill
@@ -252,7 +266,9 @@ Fellowship awarded by the Chilean Ministry of Education.
 \textbf{First and second author}:
 \begin{enumerate}
 \setlength\itemsep{0.05cm}
-\item \textbf{Espinoza}, Rackham, Jord\'an, et al.: \textit{ACCESS: A featureless optical transmission spectrum for WASP-19b from Magellan/IMACS}, Monthly Notices of the Royal Astronomical Society (2018), in press.
+\item \textbf{Espinoza}: \textit{Efficient Joint Sampling of Impact Parameters and Transit Depths in Transiting Exoplanet Light Curves}, Research Notes of the American Astronomical Society, vol. 2, 4, 209.
+\item \textbf{Espinoza}, Rackham, Jord\'an, et al.: \textit{ACCESS: A featureless optical transmission spectrum for WASP-19b from Magellan/IMACS}, Monthly Notices of the Royal Astronomical Society (2019), vol. 482, 2.
+\item \textbf{Espinoza}, Rackham, Jord\'an, et al.: \textit{ACCESS: A featureless optical transmission spectrum for WASP-19b from Magellan/IMACS}, Monthly Notices of the Royal Astronomical Society (2019), vol. 482, 2.
 \item Jord\'an \& \textbf{Espinoza}: \textit{An Alternative Derivation of the Analytic Expression of Transmission Spectra}, Research Notes of the American Astronomical Society (2018), vol. 2, 149.
 \item Brahm, \textbf{Espinoza}, Jord\'an, et al.: \textit{K2-232 b: a transiting warm Saturn on an eccentric $P = 11.2$ d orbit around a $V = 9.9$ star}, Monthly Notices of the Royal Astronomical Society (2018), vol. 477, 2572.
 \item \textbf{Espinoza}, Fortney, Miguel, et al.: \textit{Metal enrichment leads to low atmospheric C/O ratios in transiting giant exoplanets}, Astrophysical Journal Letters (2017), vol. 838, L9.
@@ -268,6 +284,13 @@ Fellowship awarded by the Chilean Ministry of Education.
 \textbf{Co-authored}:
 \begin{enumerate}
 \setlength\itemsep{0.05cm}
+\item Rabus, Lachaume, Jord\'an et al. (including \textbf{Espinoza}): \textit{A discontinuity in the Teff-radius relation of M-dwarfs
+}, Monthly Notices of the Royal Astronomical Society (2019), vol. 484, 2, 2674.
+\item Bixel, Rackham, Apai et al. (including \textbf{Espinoza}): \textit{ACCESS: Ground-based Optical Transmission Spectroscopy of the Hot Jupiter WASP-4b}, The Astronomical Journal (2019), vol. 157, 2, 68.
+\item Mallonn, von Essen, Herrero et al. (including \textbf{Espinoza}): \textit{Ephemeris refinement of 21 hot Jupiter exoplanets with high timing uncertainties}, Astronomy \& Astrophysics (2019), vol. 622, A81.
+\item Helminiak, Tokovinin, Niemczura et al. (including \textbf{Espinoza}): \textit{Orbital and physical parameters of eclipsing binaries from the All-Sky Automated Survey catalogue. X. Three high-contrast systems with secondaries detected with IR spectroscopy}, Astronomy \& Astrophysics (2019), vol. 622, A114.
+\item Zhou, Bakos, Bayliss et al. (including \textbf{Espinoza}): \textit{HATS-70b: A 13 MJ Brown Dwarf Transiting an A Star}, The Astronomical Journal (2019), vol. 157, 1, 31.
+\item Jord\'an, Brahm, \textbf{Espinoza} et al. : \textit{K2-287 b: An Eccentric Warm Saturn Transiting a G-dwarf}, The Astronomical Journal (2019), vol. 157, 3, 100.
 \item Col\'on, Zhou, Shporer et al. (including \textbf{Espinoza}): \textit{A Large Ground-Based Observing Campaign of the Disintegrating Planet K2-22b}, The Astronomical Journal (2018), in press.
 \item Bean, Stevenson, Batalha et al. (including \textbf{Espinoza}): \textit{The Transiting Exoplanet Community Early Release Science Program for JWST}, Publications of the Astronomical Society of the Pacific (2018), vol. 130, 114402.
 \item Soto, D\'iaz, Jenkins et al. (including \textbf{Espinoza}): \textit{K2-237 b and K2-238 b: discovery and characterization of two new transiting hot Jupiters from K2},  Monthly Notices of the Royal Astronomical Society (2018), vol. 478, 5356.
@@ -319,6 +342,26 @@ VVV survey}, Astronomy \& Astrophysics (2016), vol. 595, 82.
 
 
 \section*{Invited Talks}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Seminar Talk, Space Telescope Science Institute, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2019
+\end{minipage}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Astronomical Time Series 2019, MPIA, Germany
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2019
+\end{minipage}
 
 \begin{minipage}[t]{0.7\textwidth}
 \begin{flushleft}%
@@ -715,7 +758,18 @@ Director of the ``Itinerant Physics" outreach program
 \begin{minipage}[t]{0.7\textwidth}
 \begin{flushleft}%
   \setlength{\leftskip}{0.2cm}%
-\textbf{Teacher, Center of Study and Development of Talent, Penta UC}\\
+\textbf{Teacher, ProCredit Academy, F\"urth, Germany}\\
+Course: ``The Universe Around Us" (35 hours per course, 4 courses)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019A
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Teacher, Center of Study and Development of Talent, Penta UC, Santiago, Chile}\\
 Course: ``Orders of Magnitude" (50 hours per course)
 \end{flushleft}
 \end{minipage}
@@ -726,7 +780,7 @@ Course: ``Orders of Magnitude" (50 hours per course)
 \begin{minipage}[t]{0.7\textwidth}
 \begin{flushleft}%
   \setlength{\leftskip}{0.2cm}%
-\textbf{Invited Lecturer, Faculty of Economics and Business, U. de Chile}\\
+\textbf{Invited Lecturer, Faculty of Economics and Business, U. de Chile, Santiago, Chile}\\
 Course: ``Introduction to Science" (one lecture per semester)
 \end{flushleft}
 \end{minipage}
@@ -784,7 +838,20 @@ Course: ``Introduction to Science" (one lecture per semester)
 \begin{flushleft}%
   \setlength{\leftskip}{0.2cm}%
 \textbf{Student mentorship}:
+
 \end{flushleft}
+\begin{minipage}[t]{0.6\textwidth}
+\ \ \ \ \ Diana Kossakowski (PhD Student; Advisor: Henning)
+
+\ \ \ \ \ Title:  ``TESS and giant transiting exoplanets"
+
+\ \ \ \ \ Institution:  Max-Planck Institut f\"ur Astronomie
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2018---present
+\end{minipage}\\
+\vspace{0.2 cm}
+
 \begin{minipage}[t]{0.6\textwidth}
 \ \ \ \ \ Jennifer Fienco (Undergraduate Thesis Co-Advisor)
 
@@ -798,7 +865,7 @@ Course: ``Introduction to Science" (one lecture per semester)
 \vspace{0.2 cm}
 
 \begin{minipage}[t]{0.6\textwidth}
-\ \ \ \ \ Emily Sandford (Columbia PhD Student; Advisor: Kipping)
+\ \ \ \ \ Emily Sandford (PhD Student; Advisor: Kipping)
 
 \ \ \ \ \ Title:  ``Gaia \& Singly Transiting Exoplanets"
 
@@ -811,9 +878,9 @@ Course: ``Introduction to Science" (one lecture per semester)
 
 
 \begin{minipage}[t]{0.6\textwidth}
-\ \ \ \ \ Roy Van der Westhuizen (Undergraduate Thesis Co-Advisor)
+\ \ \ \ \ Roy Van der Westhuizen (Undergrad Thesis Co-Advisor)
 
-\ \ \ \ \ \ Title: ``An interactive virtual exoplanet laboratory: APIastro"
+\ \ \ \ \ Title: ``Virtual exoplanet laboratory: APIastro"
 
 \ \ \ \ \ Institution:  Pontificia Universidad Cat\'olica de Chile
 \end{minipage}
