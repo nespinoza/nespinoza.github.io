@@ -10,7 +10,11 @@ Please, fill the following form:
 <br>
 <br>
 
-<form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9XlEt46tMJpPzi8xilSnZKqMn6K1gdt8pb8xVquZqvxqQMw/formResponse">
+     <script type="text/javascript">var submitted=false;</script>
+     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/form/thanks.html';}"></iframe>
+
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe9XlEt46tMJpPzi8xilSnZKqMn6K1gdt8pb8xVquZqvxqQMw/formResponse" method="post" target="hidden_iframe"
+    onsubmit="submitted=true;">
 
           <label>Name</label>
           <input name="entry.2092238618" type="text" />
