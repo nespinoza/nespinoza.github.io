@@ -1,10 +1,10 @@
 body {
   font-size: 1em;
   line-height: 1.5; 
-  background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
+  background: #ffffff;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-  color: #666;
+  text-shadow: none;
+  color: #333333;
 }
 
 body:not(.en) :lang(en),
@@ -20,7 +20,7 @@ body:not(.es) :lang(es) {
 #navhead {
   height:50px;
   vertical-align: middle;
-  background-color:#aaaaff;
+  background-color:#A3D1E0;
 }
 
 #navhome {
@@ -51,16 +51,16 @@ p a {
 }
 
 a {
-  color: #d5000d;
+  color: #0077B3;
   text-decoration: none;
 }
 a:hover {
-  color: #c5000c;
+  color: #005f8c;
   text-decoration: underline;
 }
 
 strong {
-  color: #595959;
+  color: #333333;
 }
 
 small {
@@ -92,7 +92,7 @@ h2 {
 } 
 
 h3 {
-  color: #008cba;
+  color: #303030;
   font-size: 18px;
   font-weight: bold;
 } 
@@ -142,7 +142,6 @@ pre code {
 /* #Container
 ================================================== */
 #container {
-  background: transparent url(../images/highlight-bg.jpg) 50% 0 no-repeat;
   min-height: 595px;
 }
 
@@ -172,27 +171,27 @@ header h1, header h1 a {
   font-weight: 600;
   font-size: 58px;
   line-height: 68px;
-  color: #c0c0c0;
+  color: #333333;
   margin-bottom: 0;
 }
 
 header h1 a:hover {
-  color: #c0c0c0;
+  color: #333333;
   text-decoration: none;
-  border-bottom: 1px dotted #c0c0c0;
+  border-bottom: 1px dotted #333333;
 }
 
 header h1 em {
   font-style: normal;
   font-size: 68px;
-  color: #303030;
+  color: #0077B3;
 }
 
 header h2 {
   font-family: 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
   font-weight: 400;
   font-size: 1.6rem;
-  color: #aaa;
+  color: #666666;
   margin-top: 0;
 }
 
@@ -290,8 +289,7 @@ footer a:hover {
   height: 184px;
   margin: 0 0 30px 15px;
   padding: 0;
-  border: 4px solid rgb(200,200,200);
-  border: 4px solid rgba(200,200,200,0.4);
+  border: 4px solid #A3D1E0;
   overflow: hidden;
 
   -webkit-transition: all 500ms ease;
@@ -301,8 +299,7 @@ footer a:hover {
 }
 
 #portfolio article:hover {
-  border: 4px solid rgb(0,0,0,0.4);
-  border: 4px solid rgba(0,0,0,0.4);
+  border: 4px solid #0077B3;
 }
 
 #portfolio article:hover img {
