@@ -2,6 +2,10 @@ import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 import re
+
+# For this to work, go here: https://ui.adsabs.harvard.edu/public-libraries/JAL40dT5ToGup2Omjvc3Ag
+# Download or copy-paste text on BibTex to my_publications.bib
+
 # Mapping LaTeX-style journal codes to full names
 JOURNAL_NAME_MAP = {
     r'\aap': 'Astronomy & Astrophysics',
