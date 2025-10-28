@@ -1,0 +1,163 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper]{article} % Document font size and paper size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+\usepackage{multicol}
+
+\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in} % Remove paragraph indentation
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Nestor Espinoza - vita},pdfauthor={Nestor Espinoza}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble}
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Dr. N\'estor Espinoza}\\[0.2cm] % Your name
+\begin{minipage}[t]{0.63\textwidth}
+Assistant Astronomer | Space Telescope Science Institute\\
+Associate Research Scientist | John Hopkins University\\
+3700 San Martin Drive, Baltimore, MD 21218, USA \\
+\end{minipage}
+\begin{minipage}[t]{0.37\textwidth}
+E-mail: \href{mailto:nespinoza@stsci.edu}{nespinoza@stsci.edu}\\
+Phone: +1 (419) 338 4331\\ 
+\url{www.nestor-espinoza.com}
+\end{minipage}
+
+\hrulefill
+
+\section*{Publication List}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Selected first and second author publications} (student/mentee-led marked in {\color{cobalt}{\textbf{blue}}}):
+\begin{enumerate}
+\setlength\itemsep{0.05cm}
+\item  {\color{cobalt}{Patel \& \textbf{Espinoza}: \textit{Empirical Limb-darkening Coefficients and Transit Parameters of Known Exoplanets from TESS}, The Astronomical Journal (2022), vol. 163, 5.}}
+\item Rackham, \textbf{Espinoza}, Berdyugina et al.: \textit{Final Report for SAG 21: The Effect of Stellar Contamination on Space-based Transmission Spectroscopy}, Report Submitted to NASA on January 2022; arXiv:2201.09905.
+\item \textbf{Espinoza}, Pall\'e, Kemmer et al.: \textit{A transiting, temperate mini-Neptune orbiting the M dwarf TOI-1759 unveiled by TESS}, The Astronomical Journal (2022), vol. 163, 3.
+\item \textbf{Espinoza} \& Jones: \textit{Constraining Mornings and Evenings on Distant Worlds: A new Semianalytical Approach and Prospects with Transmission Spectroscopy}, The Astronomical Journal (2021), vol. 162, 4.
+\item  {\color{cobalt}{Jones \& \textbf{Espinoza}: \textit{catwoman: A transit modelling Python package for asymmetric light curves}, Journal of Open Source Software (2020), 5, 2382.}}
+\item Yan, \textbf{Espinoza}, Molaverdikhani, et al.: \textit{LBT transmission spectroscopy of HAT-P-12b. Confirmation of a cloudy atmosphere with no significant alkali features}, Astronomy \& Astrophysics (2020), 642, 98.
+\item \textbf{Espinoza}, Brahm, Henning, et al.: \textit{HD 213885b: A transiting 1-day-period super-Earth with an Earth-like composition around a bright ($V=7.9$) star unveiled by TESS}, Monthly Notices of the Royal Astronomical Society (2020), 491, 2, 2982.
+\item \textbf{Espinoza}: \textit{On the Transit Probability of the Habitable-zone Exoplanet GJ 357d}, Research Notes of the American Astronomical Society (2019), vol. 3, 8.
+\item \textbf{Espinoza}, Kossakowski \& Brahm: \textit{Juliet: a versatile modelling tool for transiting and non-transiting exoplanetary systems}, Monthly Notices of the Royal Astronomical Society (2019), vol. 490, 2262. 
+\item  {\color{cobalt}{Sandford, \textbf{Espinoza}, Brahm, et al.: \textit{Estimation of singly transiting K2 planet periods with Gaia parallaxes}, Monthly Notices of the Royal Astronomical Society (2019), vol. 489, 3149.}}
+\item  {\color{cobalt}{Kossakowski, \textbf{Espinoza}, Brahm, et al.: \textit{TOI-150b and TOI-163b: two transiting hot Jupiters, one eccentric and one inflated, revealed by TESS near and at the edge of the JWST CVZ}, Monthly Notices of the Royal Astronomical Society (2019), vol. 490, 1094.}}
+\item \textbf{Espinoza}, Hartman, Bakos, et al.: \textit{HATS-54b-HATS-58Ab: five new transiting hot Jupiters including one with a possible temperate companion}, The Astronomical Journal (2019), vol. 158, 2, 63.
+\item \textbf{Espinoza}, Rackham, Jord\'an, et al.: \textit{ACCESS: A featureless optical transmission spectrum for WASP-19b from Magellan/IMACS}, Monthly Notices of the Royal Astronomical Society (2019), vol. 482, 2.
+\item \textbf{Espinoza}: \textit{Efficient Joint Sampling of Impact Parameters and Transit Depths in Transiting Exoplanet Light Curves}, Research Notes of the American Astronomical Society (2018), vol. 2, 4, 209.
+\item Jord\'an \& \textbf{Espinoza}: \textit{An Alternative Derivation of the Analytic Expression of Transmission Spectra}, Research Notes of the American Astronomical Society (2018), vol. 2, 149.
+\item \textbf{Espinoza}, Fortney, Miguel, et al.: \textit{Metal enrichment leads to low atmospheric C/O ratios in transiting giant exoplanets}, Astrophysical Journal Letters (2017), vol. 838, L9.
+\item Rackham, \textbf{Espinoza}, Apai, et al.: \textit{ACCESS I: An Optical Transmission Spectrum of GJ 1214b Reveals a Heterogeneous Stellar Photosphere}, The Astrophysical Journal (2017), vol. 834, 151.
+\item \textbf{Espinoza}, Rabus, Brahm, et al.: \textit{EPIC 220504338b: A dense hot-Jupiter transiting a solar analogue}, Monthly Notices of the Royal Astronomical Society (2017), vol. 471, 4374.
+\item \textbf{Espinoza}, Brahm, Jord\'an et al.: \textit{Discovery and Validation of a High-Density sub-Neptune from the K2 Mission}, The Astrophysical Journal (2016), vol. 830, 43.
+\item \textbf{Espinoza}, Bayliss, Hartman et al.: \textit{HATS-25b through HATS-30b: A Half-dozen New Inflated Transiting Hot Jupiters from the HATSouth Survey}, The Astronomical Journal (2016), vol. 152, 108.
+\item \textbf{Espinoza} \& Jord\'an: \textit{Limb darkening and exoplanets - II. Choosing the best law for optimal retrieval of transit parameters}, Monthly Notices of the Royal Astronomical Society (2016), vol. 457, 3573.
+\item \textbf{Espinoza} \& Jord\'an: \textit{Limb darkening and exoplanets: testing stellar model atmospheres and identifying biases in transit parameters}, Monthly Notices of the Royal Astronomical Society (2015), vol. 450, 1879.
+\item Jord\'an, \textbf{Espinoza}, Rabus et al.: \textit{A Ground-based Optical Transmission Spectrum of WASP-6b}, The Astrophysical Journal (2013), vol. 778, 184.
+\end{enumerate}
+
+\textbf{Selected co-authored publications} (full list of 100+ papers in \href{https://ui.adsabs.harvard.edu/public-libraries/JAL40dT5ToGup2Omjvc3Ag}{ADS}; h-index: 30):
+\begin{itemize}
+\setlength\itemsep{0.05cm}
+
+\item Trifonov, Caballero, Morales et al. (including \textbf{Espinoza}): \textit{A nearby transiting rocky exoplanet that is suitable for atmospheric investigation}, Science (2021), 371, 6533.
+\item McGruder, Lopez-Morales, \textbf{Espinoza}, et al.: \textit{ACCESS: Confirmation of No Potassium in the Atmosphere of WASP-31b}, The Astronomical Journal (2020), 160, 235. 
+\item Jenkins, D\'iaz, Kurtovic et al. (including \textbf{Espinoza}): \textit{An ultrahot Neptune in the Neptune desert}, Nature Astronomy (2020), 4, 1148.
+\item Weaver, Lopez-Morales, \textbf{Espinoza}, et al.: \textit{ACCESS: A Visual to Near-infrared Spectrum of the Hot Jupiter WASP-43b with Evidence of H2O, but no evidence of Na or K}, The Astronomical Journal (2020), 159, 13. 
+\item Brahm, Jord\'an \& \textbf{Espinoza}: \textit{CERES: A Set of Automated Routines for Echelle Spectra}, Publications of the 
+Astronomical Society of Pacific (2017), vol. 129, 973.
+\end{itemize}
+\end{flushleft}
+
+\end{document}

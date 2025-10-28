@@ -1,0 +1,1640 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper]{article} % Document font size and paper size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+\usepackage{multicol}
+
+\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in} % Remove paragraph indentation
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Nestor Espinoza - vita},pdfauthor={Nestor Espinoza}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble}
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Dr. N\'estor Espinoza}\\[0.2cm] % Your name
+\begin{minipage}[t]{0.63\textwidth}
+Associate Astronomer | Space Telescope Science Institute\\
+Mission Scientist | Space Telescope Science Institute\\
+Associate Research Scientist | Johns Hopkins University\\
+3700 San Martin Drive, Baltimore, MD 21218, USA \\
+\end{minipage}
+\begin{minipage}[t]{0.37\textwidth}
+E-mail: \href{mailto:nespinoza@stsci.edu}{nespinoza@stsci.edu}\\
+Phone: +1 (419) 338 4331\\ 
+\url{www.nestor-espinoza.com}
+\end{minipage}
+
+\hrulefill
+
+\section*{Appointments}
+
+%\begin{minipage}[t]{0.5\textwidth}
+%Birth\\
+%Languages
+%\end{minipage}
+
+%second column
+% first column
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Mission Scientist for Exoplanet Science}\\
+Space Telescope Science Institute\\
+Baltimore, USA
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2023A --- present 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Associate Astronomer}\\
+Space Telescope Science Institute\\
+Baltimore, USA
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2024A --- present 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Associate Research Scientist}\\
+Johns Hopkins University\\
+Baltimore, USA
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2020B --- present 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Assistant Astronomer}\\
+Space Telescope Science Institute\\
+Baltimore, USA
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2019B --- 2024A 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Bernoulli Postdoctoral Fellow}\\
+Max-Planck Institut f\"ur Astronomie\\
+Heildeberg, Germany
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2017B --- 2019A 
+\end{minipage}
+
+\section*{Education}
+
+%\begin{minipage}[t]{0.5\textwidth}
+%Birth\\
+%Languages
+%\end{minipage}
+
+%second column
+% first column
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+Ph. D. in Astrophysics (\textit{summa cum laude})\\
+Advisor: Dr. Andr\'es Jord\'an
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2012 --- 2017 
+\end{minipage}\\
+
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+ Licenciate in Astronomy (\textit{summa cum laude})\\
+ Advisor: Dr. Andr\'es Jord\'an
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2007 --- 2012 
+\end{minipage}
+
+\section*{Fellowships \& Awards}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{2023 AURA Science Award}\\
+Institute-wide recognition for ``\textit{outstanding contributions to the characterization of exoplanet atmospheres through transit spectroscopy}".
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{NASA Silver Group Achievement Award}\\
+Administration-wide recognition to the JWST Instrument Commissioning Team for ``\textit{outstanding expertise and tireless dedication to commission the world-class instruments and subsystems of JWST, producing never-before-seen images of the universe}".
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{IAU-Gruber Fellowship}\\
+Fellowship awarded by The Gruber Foundation, selected by the International Astronomical Union (IAU, 25,000 USD prize for research).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Bernoulli Fellowship}\\
+Joint position between the Max-Planck-Institut f\"ur Astronomie (MPIA) and the University of Bern.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017--- 2019
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{100 Young Chilean Leaders}\\
+Selected as one of the 100 leaders under 35 by \texttt{El Mercurio} newspaper.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Adelina Guti\'errez Travel Grant}\\
+Research stipend awarded by the Chilean Astronomical Society.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{PUC Young Student Leader}\\
+Yearly recognition given to 20 students from the university.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Kavli Summer Program in Astrophysics Fellowship}\\
+Granted to 17 PhD students around the world.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{People's Choice Award}\\
+ Awarded at the Three Minute Thesis\textsuperscript{\textregistered} Competition at PUC.
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Distinguished Graduate Student Award}\\
+ Yearly award granted by the Chilean Astronomical Society.
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{CONICYT Graduate Research Fellowship}\\
+Fellowship awarded by the Chilean Ministry of Education.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2013---2017
+\end{minipage}
+
+\section*{Grants}
+
+As PI or co-PI (total: 1M+ USD):\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 4 General Observers (GO) Program}\\
+200,000+ USD cap to the project ``Using stellar contamination proxy TRAPPIST-1 b to search for an atmosphere on TRAPPIST-1 e" (co-PIs: Allen \& Espinoza; GO 9256)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2025 --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 3 General Observers (GO) Program}\\
+90,000+ USD awarded to the project ``Using stellar contamination proxy TRAPPIST-1 b to search for an atmosphere on TRAPPIST-1 e" (co-PIs: Allen \& Espinoza; GO 6456)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 2 General Observers (GO) Program}\\
+260,000+ USD awarded to the project ``Hot Jupiter Atmospheric Forecast: Are mornings cloudier than evenings in other worlds?" (co-PIs: Espinoza \& Powell; GO 3969)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 1 General Observers (GO) Program}\\
+160,000+ USD awarded to the project ``The First Near-infrared Spectroscopic Phase-curve of a Super-Earth" (PI: Espinoza; GO 2159)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 1 General Observers (GO) Program}\\
+150,000+ USD awarded to the project ``Exploring the Morning and Evening Limbs of a Transiting Exoplanet" (PI: Espinoza; GO 2113)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{STScI Director's Discretionary Funds (DDRF)}\\
+45,000+ USD awarded to the project ``Supporting Early Career Scientists \& the JWST Workshop for 2023 Spring Symposium" (PI: Espinoza).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{STScI Director's Discretionary Funds (DDRF)}\\
+60,000+ USD awarded as seed funding for the project ``Towards an Exoplanet Census in the Cloud" (PI: Espinoza).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{TESS Cycle 3 Guest Investigator Program}\\
+40,000 USD allocated to the project ``Towards Constraints On Morning And Evening Terminators Of Distant Worlds With TESS" (PI: Espinoza).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B --- present
+\end{minipage}\\
+
+As co-I (total: 500,000+ USD):\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{NASA ROSES ``Nancy Grace Roman Space Telescope Research and Support Participation Opportunities" }\\
+300,000+ USD awarded to co-I Espinoza to lead the Roman Transiting Exoplanet Atmospheric Characterization WG (PI: Quintana; Science PI: Wilson)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 3 General Observers (GO) Program}\\
+40,000+ USD awarded to the project ``TUNES: The Unintentional NIRISS Escape Survey" (PI: Vissapragada; GO 5916)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 2 General Observers (GO) Program}\\
+41,000+ USD awarded to the project ``Constraining the Oxidation State of the Super-Earth TOI-1685 b" (PI: Fisher; US Admin-PI: Espinoza; GO 4195)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 2 General Observers (GO) Program}\\
+67,000+ USD awarded to the project ``Problem Planets: Understanding the Formation of Giant Planets around Low Mass Stars" (PI: Jord\'an; US Admin-PI: Espinoza; GO 3731)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 2 General Observers (GO) Program}\\
+31,000+ USD awarded to the project ``Calibrating NIRISS order 3 for very bright time-series observations with JWST." (PI: Hoeijmakers; US Admin-PI: Espinoza; GO 3279)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 1 General Observers (GO) Program}\\
+80,000+ USD awarded to the project ``TOI-178: the best laboratory for testing planetary formation theories" (PI: Hooton; US Admin-PI: Espinoza; GO 2319)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B --- present
+\end{minipage}
+
+\section*{Software}
+Selected software under active development:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{juliet --- a versatile tool for transiting and non-transiting exoplanetary systems}\\
+Lead developer | juliet.readthedocs.io
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{ExoCTK --- the Exoplanet Characterization ToolKit}\\
+Science lead | exoctk.readthedocs.io
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Transit Spectroscopy}\\
+Lead Developer  | github.com/nespinoza/transitspectroscopy
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{tepspec --- a pipeline for multi-object transit spectroscopy}\\
+Lead developer | github.com/nespinoza/tepspec
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{abeec --- an Approximate Bayesian Computation sampler}\\
+Lead developer | github.com/nespinoza/abeec
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{limbdarkening --- software to compute stellar limb-darkening from model stellar atmospheres}\\
+Lead developer | github.com/nespinoza/limbdarkening
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2015---present
+\end{minipage}\\
+
+
+\section*{Invited Talks \& Panels}
+
+\textbf{Colloquia \& Conference plenaries/reviews}:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Joint JHU/STScI Colloquium, Baltimore, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 02/2025
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Colloquium at the Instituto de Astrof\'isica, Pontificia Universidad Cat\'olica de Chile, Santiago, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 08/2024
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+MIT Astrophysics Colloquium (MKI), MIT, Boston, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2024
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited Review at Open Problems in the Astrophysics of Gas Giants Conference, Puerto Natales, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 12/2023
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Institute of Astrophysics Colloquium, Pontificia Universidad Cat\'olica de Chile, Santiago, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 12/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Astrophysical and Planetary Sciences Colloquium, CU Boulder, Colorado, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 11/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Physics \& Astronomy Colloquium, George Mason University, Virginia, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 11/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Physics and Astronomy Colloquium, Wayne State University, Michigan, USA (Virtual Colloquium).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Ole Rømer Colloquium, Institute of Physics and Astronomy, Aarhus Universitet, Denmark (Virtual Colloquium).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Atmospheres, Atmospheres! Do I look like I care about atmospheres? (Atmo 2021; Virtual Conference).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 08/2021
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Chesapeake Bay Area Exoplanet Meeting Invited Talk, Carnegie DTM, Washington DC, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2020
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Colloquium Talk, Instituto de F\'isica, Facultad de Ciencias, Pontificia Universidad Cat\'olica de Valpara\'iso, Valpara\'iso, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Königstuhl Colloquium, MPIA, Heidelberg, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2018
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Atmospheres of Disks and Planets Workshop Invited Talk, Ringberg Castle, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2017
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+XI Chilean Astronomical Society Annual Science Meeting, San Esteban, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2014
+\end{minipage}
+\vspace{0.2cm}
+
+\textbf{Invited panels}:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+First EMAC Workshop on Open-Access Exoplanet Modeling \& Analysis Tools: ``Best Development Practices for Open-Access Resources" invited panelist
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 02/2023
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Celebrating JWST's first six months of exoplanet data: ``JWST Instrument Performance" invited panelist
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 11/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Emerging Researchers in Exoplanet Science VII: ``Careers outside academia" invited panelist
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 08/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\textbf{Seminars} (selected, last 5 years):\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Universit\'e de Montr\'eal Astrophysics Seminar, Univesit\'e de Montr\'eal, Montr\'eal, Canada.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 02/2024
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+ExoVAST Virtual Astronomy Software Talk
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 11/2023
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Astronomy Departmental Seminar, Stockholm University, Sweden.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 09/2023
+\end{minipage}
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+ExoGuide Virtual Talk
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2023
+\end{minipage}
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Thirty Minute Talk, ESO-Chile, Santiago, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 12/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Astronomy Seminar, University of Sao Paulo, Brazil (Virtual Seminar).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Astronomy and Space Physics Seminar, Uppsala University, Sweden (Virtual Seminar).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2021
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Talk/Tutorial on JWST Data Analysis at the JWST ERS Hackaton (Virtual Workshop).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 06/2021
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Physics \& Astronomy Seminar, Universidad Adolfo Iba\~nez, Santiago, Chile (Virtual Seminar).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2020
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Carnegie DTM Astro Seminar, Carnegie DTM, Washington DC, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2020
+\end{minipage}
+\vspace{0.2cm}
+
+\section*{Service (selected; last 5 years)}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Transits to Trends" conference SOC
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024---present
+\end{minipage}
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Appointed Member of AURA's Equity and Inclusion Council 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023---2025
+\end{minipage}
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Chair of the STScI/JHU ExoJamboree SOC
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024
+\end{minipage}
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Know Thy Star 2" conference SOC
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023---2025
+\end{minipage}
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of STScI's Exoplanet Strategic Initiatives Working Group
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023---2024
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Open Problems in the Astrophysics of Gas Giants" conference SOC
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023
+\end{minipage}
+
+\vspace{0.3cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the AAS Weber Prize Committee
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023---present
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Co-Organizer \& Lecturer of the ExoLatam 2022 Workshop on JWST \& exoplanet transit spectroscopy
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+ExoGuide for NASA's ExoPAG ExoExplorers Science Series
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022---2023A
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Towards Other Earths III: The Planet-Star connection" Conference SOC.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022---2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Planetary Systems and the Origins of Life in the Era of JWST" STScI Spring Symposium Workshop Organizing Committee.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022---2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of the ``Towards the Comprehensive Characterization of Exoplanets" STScI Spring Symposium SOC.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020---2021
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Co-chair of NASA's ExoPAG Study Analysis Group 21.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for Nature, Nature Astronomy,  The Journal of Open Source Software, Astronomy \& Astrophysics, The Astrophysical Journal, The Astronomical Journal, Astronomy \& Computing Journal, Publications of the Astronomical Society of the Pacific Journal 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018---present
+\end{minipage}
+
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for NSF AAG AST Grants
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for NASA's XRP Grants
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for the European Research Council Advanced Grants
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for the Chilean National Fund for Scientific and Technological Development (FONDECYT)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for the Argentinian Comission of Physical Sciences
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Co-Chair of STScI's Science Recruiting Committee
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Chair, TESS TAC
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of NASA's FINESST fellowship selection panel
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of STScI's fellowship selection committee
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Member of CSH's fellowship selection committee
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 
+\end{minipage}
+
+\section*{Outreach (Selected talks, initiatives \& events; last 5 years)}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Featured in ``Universo Curioso de la NASA" --- NASA in Spanish podcast
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2024
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Featured in various National TV interviews (Live Shots) for NASA's JWST aniversary
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 06/2024
+\end{minipage}
+
+\vspace{0.2cm}
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Featured in IMAX's ``Deep Sky" 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public Lecture: ``Finding Life in the Universe: where are we --- and where are we going?", STScI, Baltimore, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Interview for ``On the Record" hosted by Sheilah Kast in WYPR 88.1 FM [\href{https://www.npr.org/podcasts/494769096/on-the-record}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 09/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public Lecture: ``Our Place in the Universe: New Directions in Exploring and Understanding Exoplanets", Kozmetsky Center for Excellence, Texas, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public Lecture: ``A New Eye in the Sky: exploring alien worlds with the James Webb Space Telescope", STScI, Baltimore, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Featured in PBS NOVA's ``New Eye on the Universe"  [\href{https://www.pbs.org/video/new-eye-on-the-universe-zvzqn1/}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 02/2023
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public Lecture: ``Explorando Nuevos Mundos con el Telescopio Espacial James Webb", Santiago, Chile
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 12/2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Featured in PBS NOVA's ``Ultimate Space Telescope"  [\href{https://www.pbs.org/video/ultimate-space-telescope-gunryt/}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 07/2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Weekly astronomy show on chilean national radio station ``Radio USACH" / Podcast ``Razones Siderales" [\href{https://open.spotify.com/show/6sK0izR6pdByqYPt0uuoal}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020-2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Universidad Nacional Autonoma de Mexico (UNAM)'s Public Keynote Lecture for the ``Noche de Las Estrellas" (virtual) event  [\href{https://youtu.be/6wq0XPsIdOk?t=12911}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 11/2021
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Briefing for Astronomy Educators as part of NASA's Universe of Learning [\href{https://www.universe-of-learning.org/science-briefings/2021/8/12/webb-unfolding-the-universe}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 8/2021
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public (virtual) lecture for the Universidad Cat\'olica del Maule, Chile [\href{https://www.youtube.com/watch?v=vTd1w5LZnxA&list=PLZzSGxpMedi4A1anthGHRVeT0zMKOcYZo&index=6}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 6/2021
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public (virtual) lecture for the Sociedad de Astronomia del Caribe [\href{https://www.facebook.com/sociedad.astronomia/videos/179268820227106}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2/2021
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public (virtual) lecture for the Instituto de Astronom\'ia of the Universidad Cat\'olica del Norte, Chile [\href{https://fb.watch/2xSnifLOxN/}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 12/2020
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public lecture as part of STScI’s Youth for Astronomy \& Engineering Program, STScI, Baltimore, USA
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 10/2020
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Public Lecture as part of the STScI ``Public Lecture Series", STScI, Baltimore, USA [\href{https://www.youtube.com/watch?v=hnAwLra9Kh8&t=1247s}{link}]
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2020
+\end{minipage}
+
+\section*{Teaching}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Invited Lecturer, Department of Physics \& Astronomy, Johns Hopkins University}\\
+Course: ``Planets, Life, and the Universe" (two lectures per semester)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B, 2022B, 2023B, 2024B
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Teacher, ProCredit Academy, F\"urth, Germany}\\
+Course: ``The Universe Around Us" (35 hours per course, 4 courses)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019A
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Invited Lecturer, Faculty of Economics and Business, U. de Chile, Santiago, Chile}\\
+Course: ``Introduction to Science" (one lecture per semester)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2016A, 2016B, 2017A, 2020A
+\end{minipage}
+
+\section*{Postdoc Supervision \& Mentoring}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Dr. M\"ans Holmberg (co-supervisor)}\\
+Space Telescope Science Institute
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024 --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Dr. Amelie Gressier (co-supervisor)}\\
+Space Telescope Science Institute
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023 --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Dr. Achr\`ene Dyrek (postdoc mentor)}\\
+Space Telescope Science Institute
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2025 --- present
+\end{minipage}
+
+\section*{Student Supervision \& Mentoring}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Natalie Allen (PhD co-advisor)}\\
+Project: ``Constraining Stellar Contamination in Space Based Transit Spectroscopy" | Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Yiwei Chai (PhD advisor)}\\
+Project: ``Exoplanet atmospheres with the Roman Space Telescope" | Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Zoe Ko (PhD advisor)}\\
+Project: ``Data-driven exploration of Exoplanet Atmospheric Retrievals to beat Stellar Contamination " | Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Gavin Wang (PURA research advisor; Undergraduate Student)}\\
+Project: ``Likelihood-based methods for 1/f detector noise" | Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B---present
+\end{minipage}\\
+
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Natalia Oliveros Gomez (Mentor; PhD Student)}\\
+Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Ceiligh Cacho-Negrete (Mentor; Undergraduate Student)}\\
+Project: ``A population study of exoplanet atmospheres with JWST" | Institution: STScI (STScI SASP Summer Program).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2024B
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Patrick McCreery (First Year PhD student supervisor)}\\
+Project: ``Improving transit spectroscopy simulations for JWST" | Institution: Johns Hopkins University.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2022B --- 2023
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Derod Deal (Mentor; Undergraduate Student)}\\
+Project: ``A quick-look pipeline for the JWST NIRISS/FGS" | Institution: STScI/University of Florida (STScI SASP Summer Program).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2023B
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Kevin Ortiz-Ceballos (Mentor; Undergraduate Student)}\\
+Project: ``Improving the precision of exoplanet atmospheric detections through pixel-level decorrelation" | Institution: STScI/University of Puerto Rico Río Piedras (STScI SASP Summer Program).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Kathryn Jones (Mentor; Master Student)}\\
+Project: ``Extracting (transit) depths from morning and evening terminators in transit lightcurves" | Institution: MPIA, Germany/Oxford, United Kingdom (Summer Program).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019B
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Diana Kossakowski (Mentor; PhD Student)}\\
+Project: ``Gaussian Processes applied to transit lightcurves and radial velocities" | Institution: MPIA, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018 --- 2019
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Emily Sandford (Mentor; PhD Student)}\\
+Project: ``Gaia \& Singly Transiting Exoplanets" | Institution: PGIF Columbia/PUC Exchange Program, USA/Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018 --- 2019
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Jayshil Patel (Master Thesis Advisor)}\\
+Thesis title: ``Study of the limb darkening effect using exoplanet transit light curves from TESS data" | Institution: S V National Institute of Technology, India.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019A
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Jennifer Fienco (Undergraduate Thesis Co-Advisor)}\\
+Thesis title: ``Analitical Chemical Equilibrium for Exoplanetary Atmospheres" | Institution: Pontificia Universidad Cat\'olica de Chile, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019A
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Roy Van der Westhuizen (Undergraduate Thesis Co-Advisor)}\\
+Thesis title: ``Virtual exoplanet laboratory: APIastro" | Institution: Pontificia Universidad Cat\'olica de Chile, Chile.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2015B
+\end{minipage}
+
+\end{document}

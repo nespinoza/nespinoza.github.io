@@ -1,0 +1,331 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 1.0 (10/6/2012)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important:
+% This template needs to be compiled using XeLaTeX
+%
+% Note: this template has the option to use the Hoefler Text font, see the
+% font configurations section below for instructions on using this font
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, a4paper]{article} % Document font size and paper size
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec} % Allows the use of OpenType fonts
+\usepackage{multicol}
+
+\usepackage{geometry} % Allows the configuration of document margins
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6.5in, textheight=9.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in} % Remove paragraph indentation
+\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\definecolor{cornflowerblue}{rgb}{0.39, 0.58, 0.93}
+\definecolor{cobalt}{rgb}{0.0, 0.28, 0.67}
+
+\usepackage{sectsty} % Allows changing the font options for sections in a document
+\usepackage[normalem]{ulem} % Custom underlining
+\usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+
+\usepackage{marginnote} % For margin years
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}} % New command for including margin years
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
+\reversemarginpar
+
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Nestor Espinoza - vita},pdfauthor={Nestor Espinoza}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
+\usepackage{tabularx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	FONT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Two font choices are available in this template, the default is Linux Libertine, available for free at: http://www.linuxlibertine.org while the secondary choice is Hoefler Text which comes bundled with Mac OSX.
+% To use Hoefler Text, comment out the Linux Libertine block below and uncomment the Hoefler Text block. You will also need to replace the "\&" characters with "\amper{}" in section titles.
+
+% Linux Libertine Font (default)
+\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+\sectionfont{\mdseries\upshape\Large} % Set font options for sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subsections
+\subsubsectionfont{\mdseries\upshape\large} % Set font options for subsubsections
+\chardef\&="E050 % Custom ampersand character
+
+% Hoefler Text Font (bundled with Mac OSX)
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Hoefler Text} % Main text font
+%\setmonofont[Scale=0.8]{Monaco} % Set mono font (e.g. phone numbers)
+%\setsansfont[Scale=0.9]{Optima Regular} % Set sans font, used in the main name and titles in the document
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Hoefler Text}\selectfont\itshape\&}} % Custom ampersand character
+%\sectionfont{\sffamily\mdseries\large\underline} % Set font options for sections
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} % Set font options for subsections
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} % Set font options for subsubsections
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\pagenumbering{gobble}
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+{\LARGE Dr. N\'estor Espinoza}\\[0.2cm] % Your name
+\begin{minipage}[t]{0.63\textwidth}
+Assistant Astronomer | Space Telescope Science Institute\\
+Associate Research Scientist | John Hopkins University\\
+3700 San Martin Drive, Baltimore, MD 21218, USA \\
+\end{minipage}
+\begin{minipage}[t]{0.37\textwidth}
+E-mail: \href{mailto:nespinoza@stsci.edu}{nespinoza@stsci.edu}\\
+Phone: +1 (419) 338 4331\\ 
+\url{www.nestor-espinoza.com}
+\end{minipage}
+
+\hrulefill
+\section*{Education}
+
+%\begin{minipage}[t]{0.5\textwidth}
+%Birth\\
+%Languages
+%\end{minipage}
+
+%second column
+% first column
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Pontificia Universidad Cat\'olica de Chile (PUC)}\\
+Ph. D. in Astrophysics (\textit{summa cum laude})\\
+Advisor: Dr. Andr\'es Jord\'an
+ 
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\hfill 2012 --- 2017 
+\end{minipage}
+
+\section*{Fellowships \& Awards}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{IAU-Gruber Fellowship}\\
+Fellowship awarded by The Gruber Foundation, selected by the International Astronomical Union (IAU, 25,000 USD prize for research).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Bernoulli Fellowship}\\
+Joint position between the Max-Planck-Institut f\"ur Astronomie (MPIA) and the University of Bern.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2017--- 2019
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{Distinguished Graduate Student Award}\\
+ Yearly award granted by the Chilean Astronomical Society.
+ \end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2014
+\end{minipage}
+
+\section*{Grants}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 1 General Observers (GO) Program}\\
+160,000+ USD awarded to the project ``The First Near-infrared Spectroscopic Phase-curve of a Super-Earth" (PI: Espinoza; GO 2159)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{JWST Cycle 1 General Observers (GO) Program}\\
+150,000+ USD awarded to the project ``Exploring the Morning and Evening Limbs of a Transiting Exoplanet" (PI: Espinoza; GO 2113)
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2021B --- present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{TESS Cycle 3 Guest Investigator Program}\\
+40,000 USD allocated to the project ``Towards Constraints On Morning And Evening Terminators Of Distant Worlds With TESS" (PI: Espinoza).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2020B --- present
+\end{minipage}
+
+
+\section*{Software}
+Selected software under active development:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{juliet --- a versatile tool for transiting and non-transiting exoplanetary systems}\\
+Lead developer | juliet.readthedocs.io
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---present
+\end{minipage}\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+\textbf{limbdarkening --- software to compute stellar limb-darkening from model stellar atmospheres}\\
+Lead developer | github.com/nespinoza/limbdarkening
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2015---present
+\end{minipage}\\
+
+\section*{Invited Talks}
+Selected invited talks given in the past five years:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Colloqium talk on ``A new era of astronomy with JWST" | Ole Rømer Colloquium, Institute of Physics and Astronomy, Aarhus Universitet, Denmark (Virtual Colloquium).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 03/2022
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited review talk on ``Constraining Morning and Evenings on exoplanets" | Atmospheres, Atmospheres! Do I look like I care about atmospheres? (Atmo 2021; Virtual Conference).
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 08/2021
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited opening talk on ``Detection \& Characterization of Transiting Exoplanets in the Era of TESS and JWST" | Chesapeake Bay Area Exoplanet Meeting, Carnegie DTM, Washington DC, USA.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2020
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited talk: ``Sniffing exoplanet atmospheres through systematic noise" | Astronomical Time Series 2019, MPIA, Heidelberg, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 01/2019
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited talk on ``Detection \& Characterization of Transiting Exoplanets: from Kepler to TESS"  | Königstuhl Colloquium, MPIA, Heidelberg, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 05/2018
+\end{minipage}
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Invited review talk on ``C/O ratios \& planet formation theories"  | Atmospheres of Disks and Planets Workshop, Ringberg Castle, Germany.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 04/2017
+\end{minipage}
+\vspace{0.2cm}
+
+
+\section*{Service}
+Selected relevant service experience in the past five years:\\
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Co-chair of NASA's ExoPAG Study Analysis Group 21 on ``The Effect of Stellar Contamination on Space-based Transmission Spectroscopy" [\href{https://arxiv.org/abs/2201.09905}{link to report}].
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2019---2022
+\end{minipage}
+
+\vspace{0.2cm}
+
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}%
+  \setlength{\leftskip}{0.2cm}%
+Reviewer for Nature Astronomy, The Journal of Open Source Software, The Astrophysical Journal, The Astronomical Journal, Astronomy \& Computing and Publications of the Astronomical Society of the Pacific.
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+\hfill 2018---present
+\end{minipage}
+
+\end{document}
