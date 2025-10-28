@@ -70,7 +70,6 @@ small {
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
   color: #222;
-  margin-bottom: 30px;
   font-size: 14px;
 }
 
@@ -125,15 +124,6 @@ code {
   padding: 0 3px;
 }
 
-pre {
-  padding: 20px;
-  text-shadow: none;
-  overflow: auto;
-}
-pre code {
-  border: none;
-  padding: 0;
-}
 
 /* #Container
 ================================================== */
