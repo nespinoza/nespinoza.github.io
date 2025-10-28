@@ -124,6 +124,12 @@ code {
   padding: 0 3px;
 }
 
+pre code {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
 
 /* #Container
 ================================================== */
