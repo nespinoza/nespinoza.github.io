@@ -2,4 +2,8 @@ name: Néstor Espinoza, Astrophysicist.
 description: Personal website.
 url: https://www.nestor-espinoza.com
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 language: en
