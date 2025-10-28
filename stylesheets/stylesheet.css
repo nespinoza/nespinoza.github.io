@@ -124,7 +124,7 @@ code {
   padding: 0 3px;
 }
 
-pre code {
+pre code, .highlight code {
   border: none;
   background-color: transparent;
   padding: 0;
