@@ -408,3 +408,39 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+/* --- Code block rhythm & padding fix --- */
+
+/* 1) Make outside spacing symmetric around code blocks (works with Rouge/Pygments) */
+.post .highlight,
+.post pre,
+.post pre.highlight,
+.post figure.highlight {
+  margin-top: 1.125rem;
+  margin-bottom: 1.125rem; /* same as top => symmetry */
+}
+
+/* 2) Tighten inside top/bottom padding of the code box */
+.post .highlight pre,
+.post pre {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.45; /* readable without excess height */
+}
+
+/* 3) Inline code keeps its padding; block code does not inherit it */
+.post pre code {
+  padding: 0;
+  background: transparent;
+  display: block; /* avoids stray inline spacing */
+}
+
+/* 4) Remove any extra space from first/last line within the box */
+.post .highlight pre > code:first-child { margin-top: 0; }
+.post .highlight pre > code:last-child  { margin-bottom: 0; }
+
+/* 5) Keep consistent spacing when a paragraph follows a code block */
+.post .highlight + p,
+.post pre + p {
+  margin-top: 1.125rem;
+}
