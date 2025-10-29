@@ -432,3 +432,7 @@ pre code, .highlight pre code {
   background-color: transparent;
 }
 
+/* remove disqus reactions */
+#disqus_thread .reactions {
+  display: none !important;
+}
