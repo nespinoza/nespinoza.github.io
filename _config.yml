@@ -7,4 +7,4 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 language: en
-disqus: your-disqus-shortname
+disqus: nestor-espinoza
