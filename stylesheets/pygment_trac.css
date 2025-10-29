@@ -78,3 +78,26 @@
 .type-csharp .highlight .nn { color: #000000 }
 .type-csharp .highlight .s { color: #A31515 }
 .type-csharp .highlight .sc { color: #A31515 }
+
+/* === TRAC THEME NORMALIZATION FOR BLOG CODE BLOCKS === */
+
+/* Keep theme margins neutral; outer rhythm is controlled in stylesheet.css */
+.highlight {
+  margin: 0;
+}
+
+/* Tighten internal vertical padding and keep a consistent line-height */
+.highlight pre {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  line-height: 1.45;
+}
+
+/* Ensure block code isn't affected by inline-code styling */
+.highlight pre code {
+  padding: 0;
+  background: none;
+  margin: 0;
+  display: block;
+}
+

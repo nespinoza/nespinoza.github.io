@@ -444,3 +444,61 @@ footer a:hover {
 .post pre + p {
   margin-top: 1.125rem;
 }
+
+/* === BLOG CODE BLOCK RHYTHM (OUTER SPACING) ===
+   Normalize spacing around <pre> regardless of what precedes/follows it.
+   We zero the block’s own margins, then set symmetric gaps with adjacency rules.
+*/
+
+/* A) Zero the pre/.highlight block margins so we control gaps explicitly */
+pre,
+.highlight {
+  margin: 0;
+}
+
+/* B) Symmetric gap ABOVE a code block (p, headings, lists → pre/.highlight) */
+p + pre,
+p + .highlight,
+h1 + pre, h2 + pre, h3 + pre, h4 + pre, h5 + pre, h6 + pre,
+h1 + .highlight, h2 + .highlight, h3 + .highlight, h4 + .highlight, h5 + .highlight, h6 + .highlight,
+ul + pre, ol + pre, blockquote + pre,
+ul + .highlight, ol + .highlight, blockquote + .highlight {
+  margin-top: 1.125rem;
+}
+
+/* C) Symmetric gap BELOW a code block (pre/.highlight → next text block) */
+pre + p,
+.highlight + p,
+pre + h1, pre + h2, pre + h3, pre + h4, pre + h5, pre + h6,
+.highlight + h1, .highlight + h2, .highlight + h3, .highlight + h4, .highlight + h5, .highlight + h6,
+pre + ul, pre + ol, pre + blockquote,
+.highlight + ul, .highlight + ol, .highlight + blockquote {
+  margin-top: 1.125rem;
+}
+
+/* === BLOG CODE BLOCK INTERNAL PADDING ===
+   Tighten vertical padding inside <pre>, and prevent inline-code rules from inflating it.
+*/
+
+/* D) Trim internal top/bottom padding of standalone code blocks */
+pre {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  line-height: 1.45; /* readable but not airy */
+}
+
+/* E) If Rouge/Pygments wraps, make sure the inner <pre> matches */
+.highlight > pre {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  line-height: 1.45;
+}
+
+/* F) Avoid inline-code padding/background leaking into block code */
+pre code {
+  display: block;
+  padding: 0;
+  background: none;
+  margin: 0;
+}
+
