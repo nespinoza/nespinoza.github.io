@@ -6,6 +6,15 @@
 
     <title>{{ page.title }} | nestor-espinoza.com</title>
     <meta name="description" content="{% if page.description %}{{page.description}}{% else %}Néstor Espinoza, Astronomer from Santiago, Chile.{% endif %}">
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.default_image }}{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="twitter:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.default_image }}{% endif %}">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
     <link href='http://fonts.googleapis.com/css?family=Exo+2:400,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen" />
