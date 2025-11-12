@@ -130,21 +130,16 @@ pre code, .highlight code {
   padding: 0;
 }
 
-.justified-content p {
-  text-align: justify !important;
+
+
+
+.justified-content {
+  text-align: justify;
 }
 
-/* Center display/block-level equations */
 .justified-content mjx-container[display="true"] {
   text-align: center !important;
 }
-
-/* Prevent inline equations from being stretched by justification */
-.justified-content mjx-container[display="false"] {
-  text-align: initial !important;
-}
-
-
 
 /* #Container
 ================================================== */
