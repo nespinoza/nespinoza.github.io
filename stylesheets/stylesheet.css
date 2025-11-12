@@ -134,6 +134,11 @@ pre code, .highlight code {
   text-align: justify !important;
 }
 
+.justified-content .MathJax_Display,
+.justified-content .MathJax {
+  text-align: initial !important;
+}
+
 
 /* #Container
 ================================================== */
