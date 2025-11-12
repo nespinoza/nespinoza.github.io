@@ -130,6 +130,10 @@ pre code, .highlight code {
   padding: 0;
 }
 
+.justified-content p {
+  text-align: justify !important;
+}
+
 
 /* #Container
 ================================================== */
