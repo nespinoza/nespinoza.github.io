@@ -16,13 +16,13 @@ In an energy-limited regime, the first term can be estimated as the energy being
 
 $$\left(\textnormal{Input energy rate}\right) \sim \epsilon I\pi R_p^2,$$
 
-where $R_p$ is the planetary radius and $\epsilon$ is an efficiency factor accounting for the actual fraction of energy that makes it into the planet (e.g., accounting for the fact some energy might be reflected back, or that the planet might not be as efficient capturing this energy as it could for some other reason). The second term, the binding energy (per atmosphere unit) is simply given by the gravitational potential of the planet itself, that is
+where $R_p$ is the planetary radius and $\epsilon$ is an efficiency factor accounting for the actual fraction of energy that makes it into the planet (e.g., accounting for the fact some energy might be reflected back, or that the planet might not be as efficient capturing this energy as it could for some other reason). The second term, the binding energy (per atmospheric mass unit) is simply given by the gravitational potential of the planet itself, that is
 
 $$\left(\textnormal{Binding energy}\right) \sim G M_p/R_p.$$
 
 Together, this gives
 
-$$\dot{M} \sim \epsilon \frac{I\piR_p^3}{GM_p}.$$
+$$\dot{M} \sim \epsilon \frac{I \pi R_p^3}{GM_p}.$$
 
 Now, given a timescale $t$, the total mass that is lost to space would be of order $t\dot{M}$. If this is larger than the total atmospheric mass, $M_{atm}$, then your atmosphere is lost. If we assume that this atmospheric mass is a fixed fraction of the total planet mass, $M_{atm} \sim f M_p$, this gives rise to the inequality
 
