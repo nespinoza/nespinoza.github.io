@@ -28,7 +28,7 @@ Now, given a timescale $t$, the total mass that is lost to space would be of ord
 
 $$ t\dot{M} \gtrsim fM_p$$
 
-for atmospheric loss, which gives, replacing our expression for $\dot{M}$ and solving for $I$,
+for atmospheric loss. This gives, replacing our expression for $\dot{M}$ and solving for $I$,
 
 $$ I \gtrsim \frac{f}{\epsilon} \frac{G}{\pi} \frac{M_p^2}{R_p^3}.$$
 
@@ -44,8 +44,8 @@ we see the term $v_{esc}^3 \sqrt{\rho_p}$ is proportional to $M_p^2/R_p^3$. We c
 
 $$ I \propto v_{esc}^3 \sqrt{\rho_p}.$$
 
-In my chalkboard talk, I jumped directly to this once I derived the first expression for $I$ (and noted that this should really be $I_{XUV}$). This is exactly the power-law relationship [Zahnle & Catling (2017)](https://arxiv.org/abs/1702.03386) derive in their paper --- with, of course, more assumptions (and perhps a tad of intuition?) in our end. As they note in their paper, the actual (hand-drawn) relationship observed for the Solar System planets is actually $I \propto v_{esc}^4$ --- which is the mistery a lot of us are trying to uncover with actual observations of exoplanets, to see if the same holds elsewhere!
+In my chalkboard talk, I jumped directly to this once I derived the first expression for $I$ (and noted that this should really be $I_{XUV}$). This is exactly the power-law relationship [Zahnle & Catling (2017)](https://arxiv.org/abs/1702.03386) derive in their paper --- with, of course, more assumptions (and perhaps a tad of intuition?) in our end. As they note in their paper, the actual (hand-drawn) relationship observed for the Solar System planets is actually $I \propto v_{esc}^4$ --- which is the mistery a lot of us are trying to uncover with actual observations of exoplanets, to see if the same holds elsewhere!
 
-It was cool to see how people, after understanding the assumptions, got really interested on the subject (which I then pivoted to our TRAPPIST-1 observations). When I've seen this relationship discussed, I think the point of the underlying physics (modulo all the assumptions!) gets typically lost, which is why I think order of magnitude calculations like these are very helpful to put everyone on an equal footing for discussion.
+It was cool to see how people, after understanding the assumptions, got really interested on the subject (which I then pivoted to our [TRAPPIST-1 results](https://ui.adsabs.harvard.edu/abs/2025ApJ...990L..52E/abstract) and [upcoming observations](https://www.stsci.edu/jwst-program-info/download/jwst/pdf/6456/)). When I've seen this relationship discussed, I think the point of the underlying physics (modulo all the assumptions!) gets typically lost, which is why I think order of magnitude calculations like these are very helpful to put everyone on an equal footing for discussion.
 
 Thanks to [David Kipping](https://www.astro.columbia.edu/content/david-kipping) and the Columbia University Department of Astronomy for the invitation to chat briefly about this! Had a lot of fun.
