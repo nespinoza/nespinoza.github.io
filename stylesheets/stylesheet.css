@@ -134,10 +134,16 @@ pre code, .highlight code {
   text-align: justify !important;
 }
 
-.justified-content .MathJax_Display,
+/* Center display/block-level equations */
+.justified-content .MathJax_Display {
+  text-align: center !important;
+}
+
+/* Prevent inline equations from being stretched by justification */
 .justified-content .MathJax {
   text-align: initial !important;
 }
+
 
 
 /* #Container
