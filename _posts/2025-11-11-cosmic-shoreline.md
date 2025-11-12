@@ -26,7 +26,7 @@ $$\dot{M} \sim \epsilon \frac{I \pi R_p^3}{GM_p}.$$
 
 Now, given a timescale $t$, the total mass that is lost to space would be of order $t\dot{M}$. If this is larger than the total atmospheric mass, $M_{atm}$, then your atmosphere is lost. If we assume that this atmospheric mass is a fixed fraction of the total planet mass, $M_{atm} \sim f M_p$, this gives rise to the inequality
 
-$$ t\dot{M} \gtrsim fM_p,$$
+$$ t\dot{M} \gtrsim fM_p$$
 
 for atmospheric loss, which gives, replacing our expression for $\dot{M}$ and solving for $I$,
 
