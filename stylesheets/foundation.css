@@ -89,6 +89,9 @@ img {
 .text-center {
   text-align: center !important; }
 
+.text-justify {
+  text-align: justify !important; }
+
 .hide {
   display: none; }
 
