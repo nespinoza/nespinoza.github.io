@@ -135,12 +135,12 @@ pre code, .highlight code {
 }
 
 /* Center display/block-level equations */
-.justified-content .MathJax_Display {
+.justified-content mjx-container[display="true"] {
   text-align: center !important;
 }
 
 /* Prevent inline equations from being stretched by justification */
-.justified-content .MathJax {
+.justified-content mjx-container[display="false"] {
   text-align: initial !important;
 }
 
