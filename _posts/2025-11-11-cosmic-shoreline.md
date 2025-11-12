@@ -10,7 +10,7 @@ To kickstart the talk, I did a little order-of-magnitude calculation motivated b
 
 When starting the quest for detecting rocky exoplanet atmospheres, the first question one asks is where to start looking. Whether there is an atmosphere or not on an (exo)planet will depend strongly on the mass loss rate of that object, $\dot{M}$. Make this high, you likely will have no atmosphere at the end. Make it small, maybe replenishment wins and you have a steady atmosphere. This term, in turn, can be estimated as:
 
-$$\dot{M} \sim \left(\textnormal{Input energy rate}\right) / \left(\textnormal{Binding energy}\right).$$
+$$\dot{M} \sim \left(\textnormal{Input energy rate}\right) / \left(\textnormal{Binding energy per unit mass}\right).$$
 
 In an energy-limited regime, the first term can be estimated as the energy being captured by the planet from the star. If we call the incident energy per unit area and time at the planet's location $I$ (the so called "instellation"), then the input energy rate at the planet location is:
 
@@ -18,7 +18,7 @@ $$\left(\textnormal{Input energy rate}\right) \sim \epsilon I\pi R_p^2,$$
 
 where $R_p$ is the planetary radius and $\epsilon$ is an efficiency factor accounting for the actual fraction of energy that makes it into the planet (e.g., accounting for the fact some energy might be reflected back, or that the planet might not be as efficient capturing this energy as it could for some other reason). The second term, the binding energy (per atmospheric mass unit) is simply given by the gravitational potential of the planet itself, that is
 
-$$\left(\textnormal{Binding energy}\right) \sim G M_p/R_p.$$
+$$\left(\textnormal{Binding energy per unit mass}\right) \sim G M_p/R_p.$$
 
 Together, this gives
 
