@@ -8,3 +8,4 @@ kramdown:
   syntax_highlighter: rouge
 language: en
 disqus: nestor-espinoza
+default_image: /images/modern-web.jpg
