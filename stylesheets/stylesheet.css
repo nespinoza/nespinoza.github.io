@@ -131,16 +131,6 @@ pre code, .highlight code {
 }
 
 
-
-
-.justified-content p {
-  text-align: justify;
-}
-
-.justified-content mjx-container[display="true"] {
-  text-align: center !important;
-}
-
 /* #Container
 ================================================== */
 #container {
