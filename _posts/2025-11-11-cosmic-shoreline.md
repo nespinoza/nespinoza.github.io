@@ -32,7 +32,7 @@ for atmospheric loss. This gives, replacing our expression for $\dot{M}$ and sol
 
 $$ I \gtrsim \frac{f}{\epsilon} \frac{G}{\pi} \frac{M_p^2}{R_p^3}.$$
 
-The key insight is that the right-hand side of this equation are all planetary parameters at heart. The left-hand side is, in principle, all about the star for a planet at a fixed distance from it. Now, let's rewrite the right-hand side only in terms of the escape velocity, $v_{esc} = GM_p/R_p$ and the planetary density, $\rho_p = (3/4 \pi ) M_p/R_p^3$. Noting that
+The key insight is that the right-hand side of this equation are all planetary parameters at heart. The left-hand side is, in principle, all about the star for a planet at a fixed distance from it. Now, let's rewrite the right-hand side only in terms of the escape velocity, $v_{esc} = \sqrt{GM_p/R_p}$ and the planetary density, $\rho_p = (3/4 \pi ) M_p/R_p^3$. Noting that
 
 $$v_{esc}^3 = \left(2G\right)^{3/2} \frac{M_p^{3/2}}{R_p^{3/2}},$$
 
@@ -42,9 +42,9 @@ $$\sqrt{\rho_p} = \sqrt{\frac{3}{4\pi}} \frac{M_p^{1/2}}{R_p^{3/2}},$$
 
 we see the term $v_{esc}^3 \sqrt{\rho_p}$ is proportional to $M_p^2/R_p^3$. We can thus replace this in our expression for $I$ to get the boundary for atmospheric loss as
 
-$$ I \propto v_{esc}^3 \sqrt{\rho_p}.$$
+$$ I \gtrsim \frac{f}{\epsilon} \frac{G}{\pi} \frac{M_p^2}{R_p^3} = \frac{f}{\epsilon} \frac{1}{\sqrt{6 \pi G}} v_{esc}^3 \sqrt{\rho_p} \propto v_{esc}^3 \sqrt{\rho_p}.$$
 
-In my chalkboard talk, I jumped directly to this once I derived the first expression for $I$ (and noted that this should really be $I_{XUV}$). This is exactly the power-law relationship [Zahnle & Catling (2017)](https://arxiv.org/abs/1702.03386) derive in their paper --- with, of course, more assumptions (and perhaps a tad of intuition?) in our end. As they note in their paper, the actual (hand-drawn) relationship observed for the Solar System planets is actually $I \propto v_{esc}^4$ --- which is the mistery a lot of us are trying to uncover with actual observations of exoplanets, to see if the same holds elsewhere! This is one of the motivations for the [Rocky Worlds DDT program itself](https://rockyworlds.stsci.edu/).
+In my chalkboard talk, I jumped directly to this last term once I derived the first expression for $I$ (and noted that this should really be $I_{XUV}$). This is exactly the power-law relationship [Zahnle & Catling (2017)](https://arxiv.org/abs/1702.03386) derive in their paper --- with, of course, more assumptions (and perhaps a tad of intuition?) in our end. As they note in their paper, the actual (hand-drawn) relationship observed for the Solar System planets is actually $I \propto v_{esc}^4$ --- which is the mistery a lot of us are trying to uncover with actual observations of exoplanets, to see if the same holds elsewhere! This is one of the motivations for the [Rocky Worlds DDT program itself](https://rockyworlds.stsci.edu/).
 
 It was cool to see how people, after understanding the assumptions, got really interested on the subject (which I then pivoted to our [TRAPPIST-1 results](https://ui.adsabs.harvard.edu/abs/2025ApJ...990L..52E/abstract) and [upcoming observations](https://www.stsci.edu/jwst-program-info/download/jwst/pdf/6456/)). When I've seen this relationship discussed, I think the point of the underlying physics (modulo all the assumptions!) gets typically lost, which is why I think order of magnitude calculations like these are very helpful to put everyone on an equal footing for discussion.
 
