@@ -32,7 +32,7 @@ for atmospheric loss, which gives, replacing our expression for $\dot{M}$ and so
 
 $$ I \gtrsim \frac{f}{\epsilon} \frac{G}{\pi} \frac{M_p^2}{R_p^3}.$$
 
-The key insight is that the right-hand side of this equation are all planetary parameters at heart. The left-hand side is, in principle, all about the star. Now, let's rewrite the right-hand side only in terms of the escape velocity, $v_{esc} = GM_p/R_p$ and the planetary density, $\rho_p = (4\pi/3) M_p/R_p^3$. Noting that
+The key insight is that the right-hand side of this equation are all planetary parameters at heart. The left-hand side is, in principle, all about the star for a planet at a fixed distance from it. Now, let's rewrite the right-hand side only in terms of the escape velocity, $v_{esc} = GM_p/R_p$ and the planetary density, $\rho_p = (4\pi/3) M_p/R_p^3$. Noting that
 
 $$v_{esc}^3 = \left(2G\right)^{3/2} \frac{M_p^{3/2}}{R_p^{3/2}},$$
 
